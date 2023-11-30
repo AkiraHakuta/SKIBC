@@ -1,0 +1,38 @@
+/* test3.txt (factorial) */
+
+//fixedpoint combinators
+[Y] ::= (B(SII)(CB(SII)));
+[Z] ::= (B(SII)(CB(SII)));
+[T] ::= (B(SI)(SII))(B(SI)(SII));
+//The simplest fixed-point combinator, found by John Tromp, is
+[Y''] ::= (SCI)(SB(C(BS(CI))I));
+
+//booleans
+[tru] := K;
+[fls] := (KI);
+
+//church numerals
+[0] := [fls];
+[succ] := (SB);
+[1] := [succ][0];
+[2] := [succ][1];
+[3] := [succ][2];
+[4] := [succ][3];
+[5] := [succ][4];
+[pred] := (C(C(CI(C(CI[1])[succ]))(K[0]))[0]);
+[iszero] := (C(CI(K[fls]))[tru]);
+
+//[mult] := B;
+
+[fact] := (B(S(C[iszero][1]))(B(S[mult])(CB[pred])));
+[fact'] := (B(S(C[iszero][1]))(B(S[mult])(C(BB(SII))[pred])));
+
+
+[fact4] := [Y''][fact][4]; 
+[mult] := B;
+[fact4_xy] = [fact4]; /**/
+
+/*
+[fact4] := [fact'][fact'][4]; 
+[mult] := B;
+[fact4_xy] = [fact4]xy; /**/

@@ -1,0 +1,14 @@
+/* test1.txt */
+
+//booleans
+[tru] := K;
+[fls] := (KI);
+
+//pairs
+[pair] := (BC(CI));
+[fst] := (CI[tru]);
+[snd] := (CI[fls]);
+
+[pair_xy] := [pair]xy;
+[fst_pair_xy] = [fst][pair_xy];
+[snd_pair_xy] = [snd][pair_xy];
