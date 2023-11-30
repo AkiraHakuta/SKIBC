@@ -12,7 +12,7 @@ Cxyz = xzy
 
 ### Running the tests 
 
-unzip [SKIBC-win64.zip](https://github.com/AkiraHakuta/SKIBC/releases/tag/untagged-77fd05533c08563a4420)   
+unzip [SKIBC-win64.zip](https://github.com/AkiraHakuta/SKIBC/releases)   
 
 
 Open `Dos Command Prompt`  
