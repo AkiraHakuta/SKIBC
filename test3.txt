@@ -30,7 +30,7 @@
 
 [fact4] := [Y''][fact][4]; 
 [mult] := B;
-[fact4_xy] = [fact4]; /**/
+[fact4_xy] = [fact4]xy; /**/
 
 /*
 [fact4] := [fact'][fact'][4]; 
