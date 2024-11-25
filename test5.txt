@@ -1,0 +1,6 @@
+/* test5.txt (factorial) */
+#include "header.h"
+
+[5!] |= [fact][5];
+[117] |= [add]([add]([power][10][2])[10])[7];
+[5!-177] = [sub][5!][117];

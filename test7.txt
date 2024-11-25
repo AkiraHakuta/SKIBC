@@ -1,0 +1,9 @@
+/* test7.txt (Fibonacci number) */
+#include "header.h"
+
+[fib_0] = [fib][0];
+[fib_1] = [fib][1];
+[fib_2] = [fib][2];
+[fib_3] = [fib][3];
+[fib_4] = [fib][4];
+[fib_5] = [fib][5];

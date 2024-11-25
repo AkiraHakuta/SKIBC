@@ -1,0 +1,6 @@
+/* test6.txt (odd or even?) */
+#include "header.h"
+
+[Is7Even?] = [isEven][7];
+[Is7Odd?] = [isOdd][7];
+
