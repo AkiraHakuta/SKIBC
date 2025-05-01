@@ -49,4 +49,4 @@ SqStr : '[' (~('['|']'))+ ']';
 StringLiteral : '"' (~["])* '"';
 WS : [ \t\n\r]+                             -> skip;
 COMMENT : '/*' .*? '*/'                     -> skip;
-SL_COMMENT :  '//' .*? ('\n'|'<EOF>')       -> skip;
+SL_COMMENT :  '//' .*? ('\n'|EOF)           -> skip;
